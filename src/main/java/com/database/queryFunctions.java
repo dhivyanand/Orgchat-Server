@@ -1,5 +1,9 @@
-public class queryFunctions{
+import java.sql.Statement;
 
-    //Query Functions...
+public static class queryFunctions{
+
+    static void setupDatabase(Statement s){
+
+    }
 
 }
