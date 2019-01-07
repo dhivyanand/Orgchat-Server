@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - httpServer",
+            "request": "launch",
+            "mainClass": "test.java.httpServer"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Control",
             "request": "launch",
             "mainClass": "main.java.com.controller.Control"
