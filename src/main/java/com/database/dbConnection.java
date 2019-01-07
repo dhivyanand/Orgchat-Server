@@ -1,7 +1,7 @@
 import java.sql.Connection;
 import java.sql.Statement;
 
-public class dbConnect{
+public class dbConnection{
 
     protected Statement getConnection(){
 
