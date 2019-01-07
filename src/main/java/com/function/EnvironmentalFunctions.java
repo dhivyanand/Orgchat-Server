@@ -3,7 +3,7 @@ import java.sql.Statement;
 
 public class EnvironmentalFunctions{
     
-    public static void setupEnvironment(Statement statement){
+    public static void setupEnvironment(){
     
         Scanner s = new Scanner(System.in);
 
@@ -13,7 +13,7 @@ public class EnvironmentalFunctions{
 
         if ( res.equals("Y") || res.equals("YES") ){
 
-            if(queryFunctions.setupDatabase(statement)){
+            if(queryFunctions.setupDatabase()){
 
                 System.out.println("Environment setup is Successful\n");
 
@@ -32,7 +32,7 @@ public class EnvironmentalFunctions{
 
             if( res.equals("Y") || res.equals("YES")){
 
-                if(queryFunctions.alreadyExists(statement)){
+                if(queryFunctions.alreadyExists()){
 
                     System.out.println("Connected to the Database");
 
@@ -45,7 +45,7 @@ public class EnvironmentalFunctions{
 
                     if( res.equals("Y") || res.equals("YES")){
                     
-                        setupEnvironment(statement);
+                        setupEnvironment();
                     
                     }else{
 
