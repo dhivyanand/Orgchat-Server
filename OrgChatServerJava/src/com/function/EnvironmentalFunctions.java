@@ -12,6 +12,8 @@ public class EnvironmentalFunctions{
 		
 		Scanner s = new Scanner(System.in);
 		
+		System.out.println("Admin Name: ");
+		dbConfig.admin_name = s.nextLine();
 		System.out.println("Admin ID: ");
 		dbConfig.admin_id = s.nextLine();
 		System.out.println("Admin Password: ");

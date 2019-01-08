@@ -47,22 +47,21 @@ public class queryFunctions{
     public static boolean alreadyExist(){
 
         collectDBConf();
-        return false;
+        return true;
 
     }
     
     public static boolean createAdmin(){
     	
     	 Statement s = new dbConnection().getConnection();
-    	 
+    	 String dp = new String();
      	try {
      		s.executeUpdate("truncate table admin");
-     		s.executeUpdate("insert into admin values()");
-     		
-     		s.close();
+     		s.executeUpdate("insert into admin values('"+dbConfig.admin_name+"','"+dbConfig.admin_id+"','"+dp+"',"+dbConfig.admin_password+"')");
      		return true;
      	} catch (Exception e) {
-     		return false;
+     		System.out.println(e.toString());
+     		return true;//////////////change when done
 		}
     	
     }

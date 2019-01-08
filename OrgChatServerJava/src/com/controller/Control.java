@@ -20,7 +20,7 @@ public class Control{
 
         if(EnvironmentalFunctions.setupEnvironment()){
         	if(EnvironmentalFunctions.setupAdmin()){
-        		
+        		System.out.println("Admin setup is successful...");
         	}
         }
         
